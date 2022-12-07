@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .links {
@@ -29,7 +29,7 @@ body {
     align-items: center;  
 }
 
-form input[type="text"] {
+.form-search {
     border-radius: 25px;
     width: 530px;
     padding: 0 25px;
@@ -39,15 +39,15 @@ form input[type="text"] {
     border:none;
 }
 
-form input[type="text"]:hover {
+.form-search:hover {
     box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-form input[type="text"]:focus {
+.form-search:focus {
     outline: none;
 }
 
-form input[type="submit"], button[type="submit"] {
+.gray-submit {
     border:none;
     padding: 8px 16px;
     border-radius: 5px;
@@ -58,6 +58,123 @@ form input[type="submit"], button[type="submit"] {
     cursor: pointer
 }
 
-form input[type="submit"]:hover, button[type="submit"]:hover {
+.gray-submit:hover {
     border: 1px solid #dadce0;
+}
+
+.advanced-container {
+    min-height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.title {
+    color: #d93025;
+    font-size: 20px;
+    margin-left: 36px;
+}
+
+.advanced-container > hr {
+    margin-top: 26px;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.advanced-form {
+    margin-left: 36px;
+    margin-top: 32px;
+    gap:0px;
+    width:79.5%;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    min-height: 42px;
+}
+
+.form-title > label, .form-item > label {
+    margin: auto;
+    font-size: 13px;
+}
+
+.form-title > .form-blank{
+    display: inline-block;
+    min-width: 167px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.form-title > .bold-description {
+    color: #777;
+    font-size: 13px;
+    font-weight: 700;
+    width:32%;
+    margin: auto;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    min-height: 42px;
+    margin-bottom: 18px;
+}
+
+.form-title > span, label, .form-item > span, label{
+    vertical-align: baseline;
+    min-width: 167px;
+    width: 16%;
+    margin: auto 0;
+}
+
+.form-item > .input-description {
+    display: inline-block;
+    width: 32%;
+    margin: auto;
+    margin-left: 8px;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.form-item > .form-input {
+    min-width: 167px;
+    vertical-align: middle;
+    width: 50%;
+    margin: auto;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-right: 16px;
+}
+
+.form-item > .form-input:focus {
+    outline: none;
+    border: 1px solid #4285F4;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: flex-end;
+}
+
+.advanced-submit {
+    color: white;
+    height: 30px;
+    width: 120px;
+    background-color: #4d90fe;
+    font-size: 11px;
+    font-weight: bold;
+    border:1px solid #538ae5;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 8px;
+    transform: translateX(-100%);
+}
+
+.advanced-submit:hover {
+    background-color: #538ae5;
 }
