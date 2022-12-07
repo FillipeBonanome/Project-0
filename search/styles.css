@@ -4,13 +4,13 @@ body {
 
 .links {
    text-align: right;
+   margin-top: 20px;
 }
 
 .links a {
-    margin: 20px;
+    margin-right: 12px;
     color: #DB4437;
     text-decoration: none;
-    font-size: 1.125rem;
 }
 
 .links a:hover {
@@ -33,6 +33,7 @@ form input[type="text"] {
     border-radius: 25px;
     width: 530px;
     padding: 0 25px;
+    font-size: 16px;
     outline: 1px solid #dfe1e5;
     height: 44px;
     border:none;
